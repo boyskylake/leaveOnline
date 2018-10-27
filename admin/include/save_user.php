@@ -1,4 +1,9 @@
-<meta charset="UTF-8" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
 <?php
 	session_start();
 	include 'check_login.php';
@@ -27,7 +32,7 @@
 	$upload=$_FILES['image'];
 	if($upload <> '')  {
 
-	$path="../image/";
+	$path="../../printer/image/sig/";
 	$type = strrchr($_FILES['image']['name'],".");
 	$newname =$numrand.$date1.$type;
 
@@ -35,22 +40,12 @@
 
 	//คัดลอกไฟล์ไปยังโฟลเดอร์
 	@move_uploaded_file($_FILES['image']['tmp_name'],$path_copy);
-}
+	}
 	$password = $_POST["password"];
 	$conpassword = $_POST["conpassword"];
 
-	if (empty($id) or empty($name) or empty($position) or empty($degree) or empty($affiliation) or empty($leavecollect) or empty($leaveleft) or empty($leaveall) or empty($status) or empty($upload) or empty($password) or empty($conpassword)) {
-	?>
-
-		<script type='text/javascript'>alert('กรุณา ใส่ข้อมูลให้ครบ!!!!!!!!!!');
-		location = "../add_admin.php";
-		</script>
-
-	<?php 
-	}
-	else
-	{
-		if($password != $conpassword)
+	
+	if($password != $conpassword)
 		{
 	?>
 			<script type='text/javascript'>alert('กรุณา ใส่รหัสผ่านให้ตรงกัน!!!!!!!!!!');
@@ -77,5 +72,9 @@
 		{
 		    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 		}
-	}
+	
 ?>
+<body>
+	
+</body>
+</html>

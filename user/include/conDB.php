@@ -1,23 +1,20 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "dbleaveonline";
-// Create connection
-$conn = new mysqli($servername, $username, $password, $database);
+
+$host="127.0.0.1:55973";
+$username="azure";
+$password="6#vWHD_$";
+$dbname="dbleaveonline";
+
+
+$conn = new mysqli($host, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-@mysqli_query($conn,"SET NAMES UTF8"); 
+	@mysqli_query($conn,"SET NAMES UTF8"); 
 	@mysqli_query($conn,"SET character_set_results=utf8"); 
 	@mysqli_query($conn,"SET character_set_client=utf8");
 	@mysqli_query($conn,"SET character_set_connection=utf8");
-	@date_default_timezone_set($conn,"Asia/Bangkok"); 
-$sql = "SET GLOBAL time_zone = '+7:00'";
-$query = mysqli_query($conn, $sql);
-if ($query) {
-    # code...
-    
-}
-// echo "Connected successfully";
+	@date_default_timezone_set("Asia/Bangkok");
+	@mysqli_query($conn,"SET GLOBAL time_zone = '+7:00'");  
+
 ?>

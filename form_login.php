@@ -10,7 +10,7 @@
 <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-secondary" >
     <div class="container">
-      <a class="navbar-brand" href="#" >
+      <a class="navbar-brand" href="http://www.sskhospital.net/" >
         <b> โรงพยาบาลศรีสงคราม</b>
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent">

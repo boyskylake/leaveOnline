@@ -1,10 +1,9 @@
 <?php
 
-$host="localhost";
-$username="root";
-$password="";
+$host="127.0.0.1:55973";
+$username="azure";
+$password="6#vWHD_$";
 $dbname="dbleaveonline";
-
 
 $conn = new mysqli($host, $username, $password, $dbname);
 if ($conn->connect_error) {

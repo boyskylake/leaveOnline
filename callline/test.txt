@@ -1,0 +1,1 @@
+{"events":[{"type":"message","replyToken":"e877deb200a84cbc832f175658c804e7","source":{"userId":"U8d0bb3fbef3f6db99902c50b3952857f","type":"user"},"timestamp":1540630125379,"message":{"type":"text","id":"8776934327347","text":"no=3"}}]}

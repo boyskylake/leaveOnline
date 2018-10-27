@@ -14,7 +14,7 @@
 	$objQuery = mysqli_query($conn, $strSQL);
 	if ($objQuery) {
 	?>
-	<script type='text/javascript'>alert('DELETE successfully');
+	<script type='text/javascript'>alert('ลบเรียบร้อย!!!');
 	location = "../index_admin.php";
 	</script>
 
